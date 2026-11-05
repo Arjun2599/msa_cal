@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="bottom|end"
+        android:text="0"
+        android:textSize="56sp"
+        android:maxLines="1" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button android:onClick="onButton" android:text="7" style="@style/Key" />
+        <Button android:onClick="onButton" android:text="8" style="@style/Key" />
+        <Button android:onClick="onButton" android:text="9" style="@style/Key" />
+        <Button android:onClick="onButton" android:text="÷" style="@style/Key" />
+
+        <Button android:onClick="onButton" android:text="4" style="@style/Key" />
+        <Button android:onClick="onButton" android:text="5" style="@style/Key" />
+        <Button android:onClick="onButton" android:text="6" style="@style/Key" />
+        <Button android:onClick="onButton" android:text="×" style="@style/Key" />
+
+        <Button android:onClick="onButton" android:text="1" style="@style/Key" />
+        <Button android:onClick="onButton" android:text="2" style="@style/Key" />
+        <Button android:onClick="onButton" android:text="3" style="@style/Key" />
+        <Button android:onClick="onButton" android:text="−" style="@style/Key" />
+
+        <Button android:onClick="onButton" android:text="C" style="@style/Key" />
+        <Button android:onClick="onButton" android:text="0" style="@style/Key" />
+        <Button android:onClick="onButton" android:text="." style="@style/Key" />
+        <Button android:onClick="onButton" android:text="+" style="@style/Key" />
+
+        <Button
+            android:onClick="onButton"
+            android:text="="
+            android:layout_columnSpan="4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill" />
+    </GridLayout>
+</LinearLayout>
